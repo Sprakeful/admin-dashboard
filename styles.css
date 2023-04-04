@@ -1,0 +1,31 @@
+/* General styling */
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 50px 100px 1fr;
+}
+
+/* Sidebar items styling */
+.sidebar {
+  background-color: #65cbe9;
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+}
+
+li.menu-item {
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+/* Header items styling */
+.header,
+.navbar-container {
+  background-color: white;
+}
+
+/* Page content styling */
+.content {
+  background-color: #e5e5e5;
+}
