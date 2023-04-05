@@ -255,8 +255,8 @@ input#search {
 }
 
 .main-content h3 {
-  grid-column: 1 ;
   grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .card {
@@ -264,14 +264,49 @@ input#search {
   grid-auto-flow: column;
   min-width: 150px;
   border-radius: 12px;
-  padding: 12px;
-  /* Add a border radius to make the card edges rounded */
-  border-radius: 10px;
+  padding: 18px;
   /* Add a box shadow to the right and bottom of the card */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6pt;
+  background-color: orange;
+  border-radius: 10px 0 0 10px;
+}
+
+
+.card h4 {
+  margin: 10px 0px;
 }
 
 .card p {
   font-size: 12px;
   color:#535353
+}
+
+.card-actions .material-symbols-outlined {
+  margin: 0px 8px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.card-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.card-actions a {
+  text-decoration: none;
+  color: #939393
 }
