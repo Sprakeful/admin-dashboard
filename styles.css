@@ -14,7 +14,7 @@ body {
   grid-template-rows: 220px 1fr;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  padding: 4px;
+  padding: 0px;
 }
 
 /* Sidebar items styling */
@@ -22,12 +22,12 @@ body {
   background-color: #006ee6;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
-  border-radius: 12px;
   padding: 4px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
+  height: 99vh;
 }
 
 .logo {
