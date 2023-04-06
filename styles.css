@@ -353,6 +353,9 @@ input#search {
   background-color: white;
   border-radius: 12px;
   padding: 32px;
+  /* Add a box shadow to the right and bottom of the card */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .announcement-item {
